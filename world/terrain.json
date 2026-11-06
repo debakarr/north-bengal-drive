@@ -1,0 +1,1 @@
+{"format":"int16-grid","file":"terrain.bin","step":30,"minX":-3500,"minZ":-21500,"nx":534,"nz":834,"unit":0.1,"baseElevation":132.5,"source":"AWS Terrain Tiles (Terrarium z13); sources include NASA SRTM. Blurred 3x3.","relief":[-32.6,1721.9]}
