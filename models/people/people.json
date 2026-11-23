@@ -1,0 +1,264 @@
+{
+ "format": "glTF 2.0 binary, Y-up, metres, feet at y=0, character faces +Z, no Draco",
+ "animations_file": "people_anims.glb",
+ "animations_note": "Clips are stored once in people_anims.glb (armature only). Bone names are identical in every character file and rest rotations are identical; only joint positions differ with proportions. Tracks: rotation on 26 deform bones, translation on root only. Play with an AnimationMixer on the character scene (tracks bind by node name). Scale root.position tracks by root_motion_scale of the character.",
+ "reference_character": "man_shirt",
+ "reference_hips_height_m": 0.921,
+ "clip_fps": 30,
+ "clips": [
+  {
+   "name": "idle",
+   "duration": 4,
+   "loop": true
+  },
+  {
+   "name": "walk",
+   "duration": 1,
+   "loop": true
+  },
+  {
+   "name": "run",
+   "duration": 0.7,
+   "loop": true
+  },
+  {
+   "name": "sit",
+   "duration": 3,
+   "loop": true
+  },
+  {
+   "name": "wave",
+   "duration": 3,
+   "loop": true
+  }
+ ],
+ "clip_notes": {
+  "walk": "foot-locked ground speed measured in the game on the reference character (1.8 m): about 1.30 m/s at timeScale 1 (cycle 1.0 s, step about 0.65 m); the hips ride highest in mid single support",
+  "run": "foot-locked ground speed about 3.6 m/s at timeScale 1 (cycle 0.7 s, contact 0.30 of the cycle, hips lowest in mid stance)",
+  "sit": "pose loop; root.position drops by about 0.4 m on the reference character (scale by root_motion_scale)"
+ },
+ "bones": [
+  "root",
+  "hips",
+  "spine1",
+  "spine2",
+  "spine3",
+  "clavicle_l",
+  "upperarm_l",
+  "forearm_l",
+  "hand_l",
+  "fingers_l",
+  "thumb_l",
+  "clavicle_r",
+  "upperarm_r",
+  "forearm_r",
+  "hand_r",
+  "fingers_r",
+  "thumb_r",
+  "neck",
+  "head",
+  "thigh_l",
+  "shin_l",
+  "foot_l",
+  "toe_l",
+  "thigh_r",
+  "shin_r",
+  "foot_r",
+  "toe_r"
+ ],
+ "material": "one material per character (people_mat): baseColor from COLOR_0 vertex colours (linear), roughness 0.78, metallic 0; no textures, no UVs",
+ "characters": [
+  {
+   "name": "man_shirt",
+   "description": "Adult man, shirt, trousers, sandals",
+   "files": {
+    "lod0": "man_shirt_lod0.glb",
+    "lod1": "man_shirt_lod1.glb"
+   },
+   "height_m": 1.784,
+   "triangles": {
+    "lod0": 7855,
+    "lod1": 1840
+   },
+   "vertices": {
+    "lod0": 4291,
+    "lod1": 1100
+   },
+   "bytes": {
+    "lod0": 296836,
+    "lod1": 82068
+   },
+   "hips_height_m": 0.921,
+   "root_motion_scale": 1.0,
+   "clips": [
+    "idle",
+    "walk",
+    "run",
+    "sit",
+    "wave"
+   ],
+   "use": "town",
+   "notes": ""
+  },
+  {
+   "name": "man_lungi",
+   "description": "Older man, half-sleeve shirt, checked lungi, barefoot",
+   "files": {
+    "lod0": "man_lungi_lod0.glb",
+    "lod1": "man_lungi_lod1.glb"
+   },
+   "height_m": 1.632,
+   "triangles": {
+    "lod0": 7804,
+    "lod1": 1624
+   },
+   "vertices": {
+    "lod0": 4156,
+    "lod1": 942
+   },
+   "bytes": {
+    "lod0": 289216,
+    "lod1": 72160
+   },
+   "hips_height_m": 0.847,
+   "root_motion_scale": 0.919,
+   "clips": [
+    "idle",
+    "walk",
+    "run",
+    "sit",
+    "wave"
+   ],
+   "use": "village",
+   "notes": "Skirted: the lungi can show slight leg poke-through at full stride; keep walk timeScale at or below 1.0."
+  },
+  {
+   "name": "woman_sari",
+   "description": "Woman in sari with blouse and pallu",
+   "files": {
+    "lod0": "woman_sari_lod0.glb",
+    "lod1": "woman_sari_lod1.glb"
+   },
+   "height_m": 1.713,
+   "triangles": {
+    "lod0": 8804,
+    "lod1": 1837
+   },
+   "vertices": {
+    "lod0": 4813,
+    "lod1": 1141
+   },
+   "bytes": {
+    "lod0": 332004,
+    "lod1": 84584
+   },
+   "hips_height_m": 0.868,
+   "root_motion_scale": 0.942,
+   "clips": [
+    "idle",
+    "walk",
+    "run",
+    "sit",
+    "wave"
+   ],
+   "use": "town",
+   "notes": "Skirted: the sari can show slight leg poke-through at full stride; keep walk timeScale at or below 1.0."
+  },
+  {
+   "name": "woman_salwar",
+   "description": "Young woman, salwar kameez, dupatta, braid",
+   "files": {
+    "lod0": "woman_salwar_lod0.glb",
+    "lod1": "woman_salwar_lod1.glb"
+   },
+   "height_m": 1.634,
+   "triangles": {
+    "lod0": 8936,
+    "lod1": 2123
+   },
+   "vertices": {
+    "lod0": 5083,
+    "lod1": 1392
+   },
+   "bytes": {
+    "lod0": 347732,
+    "lod1": 100172
+   },
+   "hips_height_m": 0.83,
+   "root_motion_scale": 0.901,
+   "clips": [
+    "idle",
+    "walk",
+    "run",
+    "sit",
+    "wave"
+   ],
+   "use": "town",
+   "notes": "Kameez has side slits; the skirt panels can show slight poke-through at full stride; keep walk timeScale at or below 1.0."
+  },
+  {
+   "name": "hill_man",
+   "description": "Hill resident, jacket, trousers, shoes, Dhaka-style topi",
+   "files": {
+    "lod0": "hill_man_lod0.glb",
+    "lod1": "hill_man_lod1.glb"
+   },
+   "height_m": 1.635,
+   "triangles": {
+    "lod0": 8087,
+    "lod1": 1898
+   },
+   "vertices": {
+    "lod0": 4358,
+    "lod1": 1096
+   },
+   "bytes": {
+    "lod0": 302136,
+    "lod1": 82344
+   },
+   "hips_height_m": 0.84,
+   "root_motion_scale": 0.912,
+   "clips": [
+    "idle",
+    "walk",
+    "run",
+    "sit",
+    "wave"
+   ],
+   "use": "hill",
+   "notes": ""
+  },
+  {
+   "name": "child_school",
+   "description": "School child, white shirt, navy shorts, socks, shoes, backpack",
+   "files": {
+    "lod0": "child_school_lod0.glb",
+    "lod1": "child_school_lod1.glb"
+   },
+   "height_m": 1.284,
+   "triangles": {
+    "lod0": 8333,
+    "lod1": 2134
+   },
+   "vertices": {
+    "lod0": 4610,
+    "lod1": 1298
+   },
+   "bytes": {
+    "lod0": 317628,
+    "lod1": 94972
+   },
+   "hips_height_m": 0.652,
+   "root_motion_scale": 0.707,
+   "clips": [
+    "idle",
+    "walk",
+    "run",
+    "sit",
+    "wave"
+   ],
+   "use": "town",
+   "notes": ""
+  }
+ ]
+}
